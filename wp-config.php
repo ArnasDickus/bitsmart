@@ -30,7 +30,7 @@ define( 'DB_USER', 'u557874962_root' );
 define( 'DB_PASSWORD', 'kBHcPKRWP8SFUON9' );
 
 /** Database hostname */
-define( 'DB_HOST', 'devkinsta_db' );
+define( 'DB_HOST', 'u557874962_smartbit' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
