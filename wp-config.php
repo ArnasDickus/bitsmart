@@ -30,7 +30,7 @@ define( 'DB_USER', 'u557874962_root' );
 define( 'DB_PASSWORD', 'kBHcPKRWP8SFUON9' );
 
 /** Database hostname */
-define( 'DB_HOST', 'u557874962_smartbit' );
+define( 'DB_HOST', '127.0.0.1:3306');
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
