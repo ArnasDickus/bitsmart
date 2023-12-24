@@ -1,3 +1,4 @@
 .env 
+docker-compose.yml
 wp-config-sample.php
 wp-config-docker.php
