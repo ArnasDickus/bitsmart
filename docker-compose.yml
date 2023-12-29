@@ -14,6 +14,7 @@ services:
       MYSQL_PASSWORD: wordpress
     networks:
       - wpsite
+
   # phpmyadmin
   phpmyadmin:
     depends_on:
@@ -29,6 +30,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
     networks:
       - wpsite
+
   # Wordpress
   wordpress:
     depends_on:
@@ -44,7 +46,20 @@ services:
       WORDPRESS_DB_PASSWORD: wordpress
     networks:
       - wpsite
+
+  # Wordpress browser sync
+  wordpress-browser-sync:
+    image: allaboutapps/browser-sync
+    command: start --proxy 'wordpress:8000' --port 8081 --files "/var/www/html/**/*"
+    volumes: ["./:/var/www/html"]
+    ports:
+      - "8081:8081"
+      - "3001:3001"
+    networks:
+      - wpsite
+
 networks:
   wpsite:
+
 volumes:
   db_data:
