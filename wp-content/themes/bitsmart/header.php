@@ -8,7 +8,7 @@
   <body <?php body_class(); ?>>
     <div class="bg-gray-300">
       <div class="max-w-4xl mx-auto mb-5 px-4">
-        <p>Hellosdsdsdsds</p>
+        <p>fdfdff</p>
     <p></p>
       
        

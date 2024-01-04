@@ -21,13 +21,7 @@ function ExampleReactComponent() {
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-4 rounded-md",
     onClick: () => setClickCount(prev => prev + 1)
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    className: "text-xl"
-  }, "Hello from React!"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "text-sm"
-  }, "You have clicked on this component ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    className: "text-yellow-200 font-bold"
-  }, clickCount), " times."));
+  });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExampleReactComponent);
 
