@@ -1,9 +1,17 @@
-import Person from "./scripts/Person"
-import ExampleReactComponent from "./scripts/ExampleReactComponent"
-import React from "react"
-import ReactDOM from "react-dom"
+import "../src/styles/style.scss";
 
-const person1 = new Person("Brad")
+import ExampleReactComponent from "./scripts/ExampleReactComponent";
+import Header from "./layout/header/header";
+import React from "react";
+import ReactDOM from "react-dom";
+
 if (document.querySelector("#render-react-example-here")) {
-  ReactDOM.render(<ExampleReactComponent />, document.querySelector("#render-react-example-here"))
+  ReactDOM.render(
+    <ExampleReactComponent />,
+    document.querySelector("#render-react-example-here")
+  );
+}
+
+if (document.querySelector("#header")) {
+  ReactDOM.render(<Header />, document.querySelector("#header"));
 }
